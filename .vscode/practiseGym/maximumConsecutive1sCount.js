@@ -12,5 +12,5 @@ function Max1sCount(nums){
     }
     return maxi
 }
-let nums=[1,0,1,1,1,0,1,1,1,1]
+let nums=[1,1,0,0,0,1,1,0,1,1,1,]
 console.log(Max1sCount(nums))
