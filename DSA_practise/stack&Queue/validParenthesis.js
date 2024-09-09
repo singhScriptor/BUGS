@@ -6,9 +6,10 @@ function validParenthesis(s){
             if(arr.length===0 || arr.pop()!== dict[i]){
                 return false
             }
-            else{
-                arr.push(i)
-            }
+            
+        }
+        else{
+            arr.push(i)
         }
     }
     return arr.length === 0
