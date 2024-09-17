@@ -7,3 +7,12 @@ function factorial(n){
 }
 let n=8
 console.log(factorial(n))
+
+//2nd method using recursion
+function factoRial(n){
+    if(n===0)return 1
+    return n*factoRial(n-1)
+}
+let m=8
+console.log(factoRial(m))
+
