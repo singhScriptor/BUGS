@@ -15,5 +15,5 @@ function uniqueIndex(s){
     }
     return -1
 }
-let s='aabb'
+let s="loveleetcode"
 console.log(uniqueIndex(s))

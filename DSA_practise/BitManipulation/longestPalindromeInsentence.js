@@ -2,7 +2,7 @@ function longestPalindrome(s){
     if(s.length===0)return 0
     let maxi=0
     function findMid(left,right){
-        while(left>0 && right<s.length-1 && s[left]===s[right]){
+        while(left>=0 && right<s.length && s[left]===s[right]){
             left--
             right++
         }
@@ -15,5 +15,5 @@ function longestPalindrome(s){
     }
     return maxi
 }
-let s="cbbd"
+let s="abccccdd"
 console.log(longestPalindrome(s))

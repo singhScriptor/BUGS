@@ -1,23 +1,16 @@
 function maxOccuring(s){
-    let count={}
-    let maxCount=0
-    let maxi=''
+    let maxi=0;char='',set={}
     for(let i of s){
-        if(count[i]){
-            count[i]++
-        }
+        if(i in set)set[i]++
         else{
-            count[i]=1
-
+            set[i]=0
         }
+        if(set[i]>maxi){
+            maxi=set[i]
+            char=i 
+        }    
     }
-    for(let i of s){
-        if(count[i]>maxi || count[i]===maxi && count[i]<maxi){
-            maxi=count[i]
-            maxCount=i
-        }
-    }
-    return maxCount
+    return char
 }
 let s="aabbcdee"
 console.log(maxOccuring(s))
